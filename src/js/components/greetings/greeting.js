@@ -14,9 +14,9 @@ export function greetings() {
     .to('.ll', {yPercent: 200, ease: 'bounce', duration: 0.4})
     .to('.o', {yPercent: 110, duration: .7, ease: 'bounce'})
     .to('.greeting', {opacity: 0, duration: 1})
-    // .from('.wrapper', {opacity: 0, duration: 1, onComplete: () => {
-    //     document.body.style.overflow = 'auto'
-    //   }})
+    .from('.wrapper', {opacity: 0, duration: 1, onComplete: () => {
+        document.body.style.overflow = 'auto'
+      }})
   return tl
 }
 

@@ -46,6 +46,7 @@
     align-items: flex-start;
     row-gap: 5px;
     z-index: 2;
+    will-change: transform;
 }
 
 .projects__description > * {
@@ -54,6 +55,7 @@
 
 .projects__description:nth-child(even) {
     align-items: flex-end;
+    will-change: transform;
 }
 
 .projects__description:nth-child(even) > * {
@@ -109,6 +111,7 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    will-change: transform;
 }
 
 .momentum {
