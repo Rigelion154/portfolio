@@ -6,7 +6,7 @@ import {scrollAnimation} from "./js/utils/scrollAnimation";
 
 function app() {
   let render = gsap.timeline()
-  // render.add(greetings())
+  render.add(greetings())
   render.add(nav)
   render.add(scrollAnimation())
 }

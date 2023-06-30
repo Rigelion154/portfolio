@@ -74,6 +74,12 @@
     }
 }
 
+@media screen and (max-width: 390px){
+    .projects__description {
+        max-width: 90%;
+    }
+}
+
 .projects__subtitle {
     font-size: 1.4rem;
     color: #9857D3;

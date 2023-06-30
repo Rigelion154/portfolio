@@ -15,7 +15,13 @@ module.exports = {
     compress: true,
     port: 3000,
   },
-  plugins: [new HtmlWebpackPlugin({template: './src/index.html'})],
+  // plugins: [new HtmlWebpackPlugin({template: './src/index.html'})],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/index.html'),
+      filename: 'index.html',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -29,7 +35,7 @@ module.exports = {
       //   dependency: {not: ['url']},
       // },
       {
-        test: /\.(mp3?|wav|png|ogg|ico|jpe?g|mpe?g)$/i,
+        test: /\.(mp3?|wav|png|ogg|ico|jpe?g|svg|mpe?g)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name][hash][ext]',

@@ -1,8 +1,8 @@
 {
-  "name": "minesweeper",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
     "dev": "webpack --watch --mode development",
     "prod": "webpack --mode production"
