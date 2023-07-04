@@ -40,7 +40,7 @@ export function scrollAnimation() {
     let tl1 = gsap
 
     const dot = gsap.utils.toArray('.progress')
-    console.log(dot)
+
 
     dot.forEach(el => {
         tl1.to(el, {
@@ -57,7 +57,7 @@ export function scrollAnimation() {
     const projectImages = gsap.utils.toArray('.projects__item .projects__img-wrapper')
     const projectBg = gsap.utils.toArray('.projects__item .projects__bg')
 
-    console.log(projectBg)
+
 
 
     projectBg.forEach(el => {

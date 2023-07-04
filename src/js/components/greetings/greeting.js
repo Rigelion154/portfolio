@@ -1,7 +1,6 @@
 import '../../../styles/components/greeting.css'
+
 import {gsap} from "gsap";
-import {scrollAnimation} from "../../utils/scrollAnimation";
-import {nav} from "../header/header";
 
 export function greetings() {
   let tl = gsap.timeline()
